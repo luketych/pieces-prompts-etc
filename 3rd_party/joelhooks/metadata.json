@@ -1,0 +1,25 @@
+{
+  "source": {
+    "type": "github",
+    "repository": "joelhooks/opencode-config",
+    "url": "https://github.com/joelhooks/opencode-config/tree/main/agent",
+    "path": "agent",
+    "commit": "e7ba457a6f9c8722a3aa4d04bbef7e5dcd8846ae",
+    "last_updated": "2026-01-26T10:16:59-08:00",
+    "author": "Joel Hooks"
+  },
+  "downloaded": "2026-01-27",
+  "contents": {
+    "agents": [
+      "archaeologist.md",
+      "explore.md",
+      "refactorer.md",
+      "reviewer.md",
+      "swarm-planner.md",
+      "swarm-researcher.md",
+      "swarm-worker.md"
+    ],
+    "commands": []
+  },
+  "description": "OpenCode agent configuration files from joelhooks/opencode-config"
+}
