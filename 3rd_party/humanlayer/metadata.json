@@ -1,0 +1,52 @@
+{
+  "source": {
+    "type": "github",
+    "repository": "humanlayer/humanlayer",
+    "url": "https://github.com/humanlayer/humanlayer/tree/main/.claude",
+    "path": ".claude",
+    "commit": "bdea199cec94a1605d2a0de42309d67a14dafdf2",
+    "last_updated": "2026-01-07T11:05:21-08:00",
+    "author": "Dex"
+  },
+  "downloaded": "2026-01-27",
+  "contents": {
+    "agents": [
+      "codebase-analyzer.md",
+      "codebase-locator.md",
+      "codebase-pattern-finder.md",
+      "thoughts-analyzer.md",
+      "thoughts-locator.md",
+      "web-search-researcher.md"
+    ],
+    "commands": [
+      "ci_commit.md",
+      "ci_describe_pr.md",
+      "commit.md",
+      "create_handoff.md",
+      "create_plan_generic.md",
+      "create_plan.md",
+      "create_plan_nt.md",
+      "create_worktree.md",
+      "debug.md",
+      "describe_pr.md",
+      "describe_pr_nt.md",
+      "founder_mode.md",
+      "implement_plan.md",
+      "iterate_plan.md",
+      "iterate_plan_nt.md",
+      "linear.md",
+      "local_review.md",
+      "oneshot.md",
+      "oneshot_plan.md",
+      "ralph_impl.md",
+      "ralph_plan.md",
+      "ralph_research.md",
+      "research_codebase.md",
+      "research_codebase_generic.md",
+      "research_codebase_nt.md",
+      "resume_handoff.md",
+      "validate_plan.md"
+    ]
+  },
+  "description": "Claude configuration files including agents and custom commands from humanlayer project"
+}

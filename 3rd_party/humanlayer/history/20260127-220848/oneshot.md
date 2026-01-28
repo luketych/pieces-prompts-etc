@@ -1,0 +1,21 @@
+---
+source: humanlayer
+type: command
+author: humanlayer-team
+created_date: 2025-10-14
+updated_date: 2025-10-14
+workflow_stage: unknown
+labels: []
+tags: []
+scope: [project-management]
+requires_human: false
+autonomous: false
+complexity: simple
+dependencies: [oneshot_plan, ralph_research]
+output_format: markdown
+use_cases: []
+related: []
+---
+
+1. use SlashCommand() to call /ralph_research with the given ticket number
+2. launch a new session with `npx humanlayer launch --model opus --dangerously-skip-permissions --dangerously-skip-permissions-timeout 14m --title "plan ENG-XXXX" "/oneshot_plan ENG-XXXX"`
