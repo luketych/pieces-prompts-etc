@@ -2,8 +2,8 @@
 
 A searchable repository of prompts, agents, and configurations from various external sources.
 
-Uses `uv` for running maintenance and test scripts. Script entry points will exit
-with a helpful message if run without `uv`.
+Uses `uv` for running maintenance, setup, and test scripts. Script entry points
+will exit with a helpful message if run without `uv`.
 
 ## Structure
 
@@ -134,3 +134,23 @@ Source inventory, update workflow, and per-source stats live in `3rd_party/READM
 - Update third-party sources: `uv run python scripts/update_3rd_party.py`
 - Cleanup duplicate history snapshots: `uv run python scripts/cleanup_3rd_party_history.py`
 - E2E fixture and local-repo walkthrough: `tests/e2e/README.md`
+
+## QMD Search
+
+QMD provides local search across prompts with optional history inclusion.
+
+### Setup
+
+- Install QMD: `bun install -g https://github.com/tobi/qmd`
+- Register collections and contexts: `uv run python scripts/qmd_setup.py`
+- Index content: `qmd update` (optional: `qmd embed` for semantic search)
+
+The template config lives in `qmd/index.yml` if you want to manage collections manually.
+
+### Query
+
+- Basic search: `uv run python scripts/qmd_query.py "workflow planning"`
+- Include history: `uv run python scripts/qmd_query.py "workflow planning" --include-history`
+- Filter by source/type: `uv run python scripts/qmd_query.py "commit" --source humanlayer --type command`
+- Bundle prompt blocks: `uv run python scripts/qmd_query.py "research plan" --format bundle`
+- Skip first-party docs: `uv run python scripts/qmd_query.py "workflow planning" --skip-first-party`

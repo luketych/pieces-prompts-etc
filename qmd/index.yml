@@ -1,0 +1,29 @@
+# QMD collections template for main_repo
+# Replace __MAIN_REPO__ with the absolute path to main_repo,
+# or run scripts/qmd_setup.py to install automatically.
+
+global_context: "Prompt library for agent workflows. Use path contexts to narrow results."
+
+collections:
+  all-prompts:
+    path: "__MAIN_REPO__"
+    pattern: "3rd_party/*/viscera/**/*.md"
+    context:
+      "/": "Current prompt library across external sources."
+      "/3rd_party/humanlayer/viscera/commands": "Claude commands"
+      "/3rd_party/humanlayer/viscera/agents": "Claude agents"
+      "/3rd_party/joelhooks/viscera": "OpenCode agents"
+      "/3rd_party/research--ai_prompts/viscera": "Prompting techniques"
+
+  first-party:
+    path: "__MAIN_REPO__"
+    pattern: "1st_party/**/*.md"
+    context:
+      "/": "First-party docs and guidance"
+
+  # Optional: historical snapshots (query only when needed)
+  all-prompts-history:
+    path: "__MAIN_REPO__"
+    pattern: "3rd_party/*/history/**/*.md"
+    context:
+      "/": "Historical prompt snapshots (opt-in)."
