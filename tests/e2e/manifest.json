@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "defaults": {
+    "update_policy": "manual",
+    "preserve": [
+      "metadata.json",
+      "history"
+    ],
+    "history": true,
+    "history_dir": "history",
+    "prompts_dir": "viscera",
+    "prompt_extensions": [
+      ".md"
+    ]
+  },
+  "entries": [
+    {
+      "id": "e2e-local-prompts",
+      "path": "tests/e2e/output/local_prompts",
+      "type": "git",
+      "source": {
+        "repo": "tests/e2e/fixtures/local_repo",
+        "ref": "main",
+        "browse": "local"
+      },
+      "metadata_file": "metadata.json",
+      "notes": "Local e2e repo for update tests."
+    }
+  ]
+}
