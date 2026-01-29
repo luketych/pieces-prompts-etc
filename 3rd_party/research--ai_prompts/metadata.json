@@ -1,0 +1,26 @@
+{
+  "source": {
+    "type": "github",
+    "repository": "luketych/research--ai_prompts",
+    "url": "https://github.com/luketych/research--ai_prompts",
+    "path": ".",
+    "commit": "145691baabce8ae8de48a84959ad499311110b15",
+    "last_updated": "2025-07-07T13:41:41-07:00",
+    "author": "Luke Tych"
+  },
+  "downloaded": "2026-01-27",
+  "contents": {
+    "prompts": [
+      "beware_prompt_caching.md",
+      "consistency.md",
+      "emphasis.md",
+      "share_user_state_sometimes.md",
+      "threaten-invoke_empathy.md",
+      "truncating_to_simplify.md",
+      "who-what-where-why.md"
+    ],
+    "agents": [],
+    "commands": []
+  },
+  "description": "Prompting technique snippets collected from the Augment blog."
+}
